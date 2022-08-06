@@ -1,0 +1,24 @@
+{
+  "name": "vite3vue3ssrkit",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite-ssr --port 3333",
+    "build": "vite-ssr build",
+    "serve": "vite-ssr --mode production",
+    "build:noexternal": "vite-ssr build --config vite.config.noexternal.ts",
+    "preview": "node ./dist/server/server.cjs"
+  },
+  "dependencies": {
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.4",
+    "vite-plugin-pages": "^0.25.0",
+    "vite-ssr-vue3": "^0.1.4"
+  }
+}
